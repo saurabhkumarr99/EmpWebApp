@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>
+body {
+	background-color: #f1f2f4;
+	text-align: center;
+}
+
+.Register {
+	padding: 10px 2px;
+	width: 50%;
+	margin: auto;
+	box-shadow: 1px 1px 5px grey;
+	background-color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Register New Employee</h1>
+	</header>
+
+	<section>
+
+		<div class="Register">
+			<form action="RegisterEmpServlet" method="post">
+				Employee Name &nbsp <input type="text" name="empName"><br />
+				Gender &emsp;&emsp;&emsp; Male <input type="radio" name="gender" value="Male">
+				Female <input type="radio" name="gender" value="Female"><br />
+				salary &emsp;&emsp;&emsp;&emsp;&nbsp <input type="text" name="salary"> <br />
+				EmailId &emsp;&emsp;&emsp;&nbsp <input type="text" name="email" /> <br /> 
+				Password &emsp;&emsp;&emsp; <input type="password" name="password" /> <br /> 
+				<input type="submit" value="Register Employee"><br />
+			</form>
+
+		</div>
+	</section>
+
+</body>
+</html>
